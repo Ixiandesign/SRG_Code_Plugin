@@ -8,6 +8,8 @@ that reads `AGENTS.md` — gets the same context.
 
 ## Plugins
 
+### Custom, lab-authored
+
 | Plugin | Covers |
 |---|---|
 | [`machine-control`](plugins/machine-control) | KMotion/KFlop CNC integration (C# UI ↔ `KMotion_dotNet.dll`), real-time KFlop C programs, G-code interpreter integration, orthogonal-cutting experiment configuration, PFV4/high-speed-camera trigger sync |
@@ -15,6 +17,26 @@ that reads `AGENTS.md` — gets the same context.
 
 A third plugin, `dic-piv-analysis` (NCORR/PIVlab/OpenPIV strain-field analysis), was scoped during
 architecture planning but is deferred for now.
+
+### Mirrored, general-purpose (not lab-specific)
+
+These are real, existing plugins from other repos, referenced via pinned `git-subdir` sources in
+`.claude-plugin/marketplace.json` — not copied or reimplemented — so installing this one marketplace
+also covers general coding workflows, not just CNC/lab domain knowledge.
+
+| Plugin | Covers | Mirrored from |
+|---|---|---|
+| `code-review` | Automated code review | `anthropics/claude-code` |
+| `security-guidance` | General secure-coding guidance | `anthropics/claude-code` |
+| `commit-commands` | Commit message / commit workflow helpers | `anthropics/claude-code` |
+| `claude-md-management` | Audits/improves `CLAUDE.md`/`AGENTS.md`, captures session learnings | `anthropics/claude-plugins-official` |
+| `software-engineering` | Debugging, test-running, documentation, and architecture-diagram skills | `sgaunet/claude-plugins` |
+
+No standalone "debug" or "testing-strategy" plugin exists in any official Anthropic marketplace as of
+this writing (checked directly, not assumed) — `software-engineering` above is the closest real,
+maintained substitute and covers both. Each entry is pinned to a commit SHA for stability; bump the
+`sha`/`ref` in `marketplace.json` deliberately when picking up upstream changes, rather than tracking
+`main` unpinned.
 
 ## Installing in a project repo
 

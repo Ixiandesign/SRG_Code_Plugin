@@ -18,6 +18,61 @@
       "name": "lab-conventions",
       "source": "./lab-conventions",
       "description": "Experiment metadata schema, data file naming, general coding best practices, and the lab's AGENTS.md project template."
+    },
+    {
+      "name": "code-review",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-code.git",
+        "path": "plugins/code-review",
+        "ref": "main",
+        "sha": "6ce37e9f464cf75d172754ba70a42e01c3d876e9"
+      },
+      "description": "General-purpose automated code review (mirrored from anthropics/claude-code)."
+    },
+    {
+      "name": "security-guidance",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-code.git",
+        "path": "plugins/security-guidance",
+        "ref": "main",
+        "sha": "6ce37e9f464cf75d172754ba70a42e01c3d876e9"
+      },
+      "description": "General secure-coding guidance (mirrored from anthropics/claude-code)."
+    },
+    {
+      "name": "commit-commands",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-code.git",
+        "path": "plugins/commit-commands",
+        "ref": "main",
+        "sha": "6ce37e9f464cf75d172754ba70a42e01c3d876e9"
+      },
+      "description": "Commit message and commit workflow helpers (mirrored from anthropics/claude-code)."
+    },
+    {
+      "name": "claude-md-management",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "plugins/claude-md-management",
+        "ref": "main",
+        "sha": "c447c3207a425bc4e2a0d068435f64b0477ae981"
+      },
+      "description": "Audits and improves CLAUDE.md/AGENTS.md files and captures session learnings (mirrored from anthropics/claude-plugins-official)."
+    },
+    {
+      "name": "software-engineering",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgaunet/claude-plugins.git",
+        "path": "plugins/software-engineering",
+        "ref": "main",
+        "sha": "a18d0e8819aef54ce087c810dd32022ea14fa410"
+      },
+      "description": "General debugging, test-running, documentation, and architecture-diagram skills bundle (mirrored from sgaunet/claude-plugins) — fills the gap since no standalone debug/testing-strategy plugin exists in official Anthropic marketplaces."
     }
   ]
 }
