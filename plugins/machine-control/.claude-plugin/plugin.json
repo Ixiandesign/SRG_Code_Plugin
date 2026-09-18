@@ -1,0 +1,9 @@
+{
+  "name": "machine-control",
+  "version": "0.1.0",
+  "description": "KMotion/KFlop CNC control integration and PFV4/high-speed-camera trigger sync for the Schoop Research Group's custom 3-axis in-situ orthogonal cutting machine.",
+  "author": {
+    "name": "Schoop Research Group"
+  },
+  "keywords": ["kmotion", "kflop", "cnc", "motion-control", "photron", "pfv4", "manufacturing"]
+}

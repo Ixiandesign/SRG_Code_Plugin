@@ -1,0 +1,23 @@
+{
+  "name": "srg-code-plugin",
+  "owner": {
+    "name": "Schoop Research Group",
+    "url": "https://www.engr.uky.edu/research/schoop-research-group"
+  },
+  "metadata": {
+    "description": "Standardized Claude Code plugin marketplace for the Schoop Research Group (Institute for Sustainable Manufacturing, University of Kentucky) — domain knowledge and tooling for the in-situ orthogonal cutting machine's KMotion/KFlop control layer and general lab coding conventions.",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "machine-control",
+      "source": "./machine-control",
+      "description": "KMotion/KFlop CNC control integration and PFV4/high-speed-camera trigger sync for the custom 3-axis orthogonal cutting machine."
+    },
+    {
+      "name": "lab-conventions",
+      "source": "./lab-conventions",
+      "description": "Experiment metadata schema, data file naming, general coding best practices, and the lab's AGENTS.md project template."
+    }
+  ]
+}

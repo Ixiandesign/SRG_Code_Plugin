@@ -1,0 +1,23 @@
+{
+  "csharp": {
+    "command": "csharp-ls",
+    "args": [],
+    "extensionToLanguage": {
+      ".cs": "csharp"
+    },
+    "restartOnCrash": true,
+    "diagnostics": true
+  },
+  "cpp": {
+    "command": "clangd",
+    "args": [],
+    "extensionToLanguage": {
+      ".c": "c",
+      ".cpp": "cpp",
+      ".h": "cpp",
+      ".hpp": "cpp"
+    },
+    "restartOnCrash": true,
+    "diagnostics": true
+  }
+}
