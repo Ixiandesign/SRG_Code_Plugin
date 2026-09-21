@@ -1,9 +1,0 @@
-{
-  "name": "lab-conventions",
-  "version": "0.1.0",
-  "description": "Experiment metadata schema, data file naming conventions, general coding best practices, and the lab's AGENTS.md project bootstrap template for the Schoop Research Group.",
-  "author": {
-    "name": "Schoop Research Group"
-  },
-  "keywords": ["conventions", "metadata", "documentation", "lab-standards"]
-}
