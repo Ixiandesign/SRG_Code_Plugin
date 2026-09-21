@@ -30,10 +30,29 @@ No official MATLAB language-server plugin exists anywhere as of this writing (ch
 assumed); `matlab-mcp` uses MathWorks' own MCP server instead, which does more than an LSP would
 (runs code, not just diagnostics) at the cost of needing a local binary + MATLAB path.
 
-## Installing in a project repo
+## Installing everything, one line
+
+Requires the `claude` CLI already installed. Adds the marketplace and installs all 8 plugins
+(`scope: user`, so they're available in every project on the machine, not just one repo). Safe to
+re-run — both `marketplace add` and `plugin install` no-op if already present.
+
+macOS/Linux/Git Bash:
+```bash
+curl -fsSL https://raw.githubusercontent.com/Ixiandesign/SRG_Code_Plugin/main/install.sh | bash
+```
+
+Windows PowerShell:
+```powershell
+irm https://raw.githubusercontent.com/Ixiandesign/SRG_Code_Plugin/main/install.ps1 | iex
+```
+
+Each script still prints the per-plugin prerequisites below (env vars, `clangd`/`pyright` on PATH,
+MATLAB MCP setup) — installing doesn't skip those.
+
+## Installing selectively
 
 ```
-/plugin marketplace add <path-or-url-to-this-repo>
+/plugin marketplace add Ixiandesign/SRG_Code_Plugin
 /plugin
 ```
 
