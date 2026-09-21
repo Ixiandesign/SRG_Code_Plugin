@@ -1,0 +1,10 @@
+{
+  "name": "matlab-mcp",
+  "description": "Run and analyze MATLAB code via MathWorks' official MATLAB MCP Server. Requires a one-time local setup — see this plugin's README.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kaden Mahoney"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/matlab/matlab-mcp-server"
+}

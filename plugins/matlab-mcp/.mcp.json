@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "matlab": {
+      "command": "REPLACE_WITH_PATH_TO_matlab-mcp-server_BINARY",
+      "args": [],
+      "env": {
+        "MW_MCP_SERVER_MATLAB_ROOT": "REPLACE_WITH_YOUR_MATLAB_INSTALL_PATH"
+      }
+    }
+  }
+}

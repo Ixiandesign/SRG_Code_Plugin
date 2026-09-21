@@ -1,0 +1,9 @@
+{
+  "name": "clangd-lsp",
+  "description": "C/C++/Objective-C code intelligence via clangd. Requires clangd on PATH.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kaden Mahoney"
+  },
+  "license": "MIT"
+}

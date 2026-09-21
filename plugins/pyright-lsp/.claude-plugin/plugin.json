@@ -1,0 +1,9 @@
+{
+  "name": "pyright-lsp",
+  "description": "Python code intelligence via pyright. Requires pyright-langserver on PATH (npm install -g pyright).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kaden Mahoney"
+  },
+  "license": "MIT"
+}

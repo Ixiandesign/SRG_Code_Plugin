@@ -1,0 +1,82 @@
+{
+  "name": "coding-agent-plugins",
+  "owner": {
+    "name": "Kaden Mahoney"
+  },
+  "metadata": {
+    "description": "General-purpose Claude Code plugin marketplace: skill-authoring and TDD skills mirrored from Matt Pocock, LSP/code-intelligence for C/C++/Objective-C and Python, an official MATLAB MCP integration, and the official Context7, GitHub, and code-review plugins.",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "mattpocock-skill-creator",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/mattpocock/skills.git",
+        "path": "skills/productivity/writing-for-agents",
+        "ref": "main",
+        "sha": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7"
+      },
+      "description": "Reference for writing skills, AGENTS.md, and CLAUDE.md (mirrored from Matt Pocock's writing-for-agents skill)."
+    },
+    {
+      "name": "mattpocock-tdd",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/mattpocock/skills.git",
+        "path": "skills/engineering/tdd",
+        "ref": "main",
+        "sha": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7"
+      },
+      "description": "Test-driven development: red-green loop, seams, and test anti-patterns (mirrored from Matt Pocock's tdd skill)."
+    },
+    {
+      "name": "clangd-lsp",
+      "source": "./plugins/clangd-lsp",
+      "description": "C/C++/Objective-C code intelligence via clangd."
+    },
+    {
+      "name": "pyright-lsp",
+      "source": "./plugins/pyright-lsp",
+      "description": "Python code intelligence via pyright."
+    },
+    {
+      "name": "matlab-mcp",
+      "source": "./plugins/matlab-mcp",
+      "description": "Run and analyze MATLAB code via MathWorks' official MATLAB MCP Server."
+    },
+    {
+      "name": "context7",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "external_plugins/context7",
+        "ref": "main",
+        "sha": "c447c3207a425bc4e2a0d068435f64b0477ae981"
+      },
+      "description": "Up-to-date, version-specific library documentation via Upstash's Context7 MCP server (mirrored from anthropics/claude-plugins-official)."
+    },
+    {
+      "name": "github",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "external_plugins/github",
+        "ref": "main",
+        "sha": "c447c3207a425bc4e2a0d068435f64b0477ae981"
+      },
+      "description": "GitHub repository, issue, and PR management via GitHub's official MCP server (mirrored from anthropics/claude-plugins-official)."
+    },
+    {
+      "name": "code-review",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "plugins/code-review",
+        "ref": "main",
+        "sha": "c447c3207a425bc4e2a0d068435f64b0477ae981"
+      },
+      "description": "Automated multi-agent code review with confidence-based scoring (mirrored from anthropics/claude-plugins-official)."
+    }
+  ]
+}
